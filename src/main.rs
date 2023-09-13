@@ -1,3 +1,6 @@
+mod multiply;
+use multiply::multiply;
+
 use ferris_says::say;
 use std::io::{stdout, BufWriter};
 
@@ -46,4 +49,5 @@ fn main() {
     println!("Base 16: {}", base16);
     println!("Base 16: {}", base16big);
     sentence!("Doug", "is", "a really cool person");
+    println!("9 * 5 = {}", multiply(9,5))
 }
