@@ -1,5 +1,8 @@
 mod multiply;
 use multiply::multiply;
+mod even_or_odd;
+
+use even_or_odd::even_or_odd;
 
 use ferris_says::say;
 use std::io::{stdout, BufWriter};
@@ -49,5 +52,6 @@ fn main() {
     println!("Base 16: {}", base16);
     println!("Base 16: {}", base16big);
     sentence!("Doug", "is", "a really cool person");
-    println!("9 * 5 = {}", multiply(9,5))
+    println!("9 * 5 = {}", multiply(9,5));
+    println!("45 is an {} number", even_or_odd(45));
 }
